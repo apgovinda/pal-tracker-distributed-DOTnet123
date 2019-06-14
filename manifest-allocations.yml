@@ -6,7 +6,6 @@ applications:
   routes:
   - route: allocationsgovin.cfapps.io
   path: Applications/AllocationsServer/bin/Release/netcoreapp2.1/publish
-  env:
-    REGISTRATION_SERVER_ENDPOINT: http://registrationgovin.cfapps.io/
   services:
   - tracker-allocations-database
+  - tracker-service-registry
