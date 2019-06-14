@@ -7,6 +7,6 @@ applications:
   - route: timesheets-pal-govin-cfapps.io
   path: Applications/TimesheetsServer/bin/Release/netcoreapp2.1/publish
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-govin-cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-govin-cfapps.io
   services:
   - tracker-timesheets-database
