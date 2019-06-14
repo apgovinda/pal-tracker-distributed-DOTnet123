@@ -4,7 +4,7 @@ applications:
   instances: 1
   memory: 256M
   routes:
-  - route: allocations-pal-govin-cfapps.io
+  - route:  govindhraju.cfapps.io
   path: Applications/AllocationsServer/bin/Release/netcoreapp2.1/publish
   env:
     REGISTRATION_SERVER_ENDPOINT: http://registration-govin-cfapps.io
