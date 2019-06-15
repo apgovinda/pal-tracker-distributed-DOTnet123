@@ -2,10 +2,12 @@
 applications:
 - name: tracker-allocations
   instances: 1
-  memory: 512M
+  memory: 256M
   routes:
   - route: allocationsgovin.cfapps.io
   path: Applications/AllocationsServer/bin/Release/netcoreapp2.1/publish
   services:
   - tracker-allocations-database
   - tracker-service-registry
+  - tracker-circuit-breaker-dashboard
+  - tracker-amqp

@@ -2,10 +2,12 @@
 applications:
 - name: tracker-timesheets
   instances: 1
-  memory: 512M
+  memory: 256M
   routes:
   - route: timesheetsgovin.cfapps.io
   path: Applications/TimesheetsServer/bin/Release/netcoreapp2.1/publish
   services:
   - tracker-timesheets-database
   - tracker-service-registry
+  - tracker-circuit-breaker-dashboard
+  - tracker-amqp
