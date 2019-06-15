@@ -4,7 +4,7 @@ applications:
   instances: 1
   memory: 512M
   routes:
-  - route: allocationsgovin.cfapps.io
+  - route: timesheetsgovin.cfapps.io
   path: Applications/TimesheetsServer/bin/Release/netcoreapp2.1/publish
   services:
   - tracker-timesheets-database
